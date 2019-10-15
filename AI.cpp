@@ -86,6 +86,8 @@ void AI::update(int x, int y, bool hit)
 bool AI::attack(int x, int y)
 {
   //Where AI difficulty will go
+  cout << "\n\n\n\n\n\n\nFIXME: AI::attack(int,int)\n\n\n\n\n\n\n";
+  return false;
 }
 
 void AI::printHidden()

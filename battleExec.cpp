@@ -192,6 +192,8 @@ void Executive::runPvP()
     Create powerup board here
   */
     powerUpGenerator();
+    player1.setPowerUpsPtr(powerUps);
+    player2.setPowerUpsPtr(powerUps);
   /*
 
   */
@@ -236,6 +238,7 @@ void Executive::runPvP()
         player1.update(row,col, false);
 
       }
+      updatePowerUps(row,col);
 
       player1.printHidden();
       player1.print();
@@ -287,7 +290,7 @@ void Executive::runPvP()
         player2.update(row,col, false);
 
       }
-
+      updatePowerUps(row,col);
 
       player2.printHidden();
       player2.print();
@@ -591,6 +594,12 @@ void Executive::setAIDifficulty(AI& someAI)
 void Executive::powerUpGenerator()
 {
   //create an initial array of position values to be later shuffled
+  powerUps = new char*[8];
+  for(int i = 0; i < 8; i++)
+  {
+    powerUps[i] = new char[8];
+  }
+
   for(int i = 0; i < 8; i++)
   {
     for(int j = 0; j < 8; j++)
@@ -642,4 +651,9 @@ void Executive::displayPowerUps()
     }
     cout << '\n';
   }
+}
+
+void Executive::updatePowerUps(int x, int y)
+{
+  powerUps[x][y] = '*';
 }

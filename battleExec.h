@@ -100,6 +100,8 @@ public:
 
     void displayPowerUps();
 
+    void updatePowerUps(int x, int y);
+
 
 private:
 
@@ -126,6 +128,6 @@ private:
       int dir; //direction that the ship faces
 
       int numPowerUps = 0;
-      char powerUps [8][8];
+      char** powerUps = nullptr;
 };
 #endif

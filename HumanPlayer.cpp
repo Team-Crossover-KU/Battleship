@@ -108,3 +108,9 @@ bool HumanPlayer::hitRetry(int x, int y)
 {
   return(playerBoard.retryCheck(x, y));
 }
+
+void HumanPlayer:: setPowerUpsPtr(char** &execPtr)
+{
+  powerUpsPtr = execPtr;
+  cout << "player loot pointer set!\n\n";
+}

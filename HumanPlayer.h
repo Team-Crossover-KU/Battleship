@@ -15,6 +15,7 @@ class HumanPlayer : public PlayerInterface
     int unmark;//ships that are unmarked
     int num_hits;
     int numOfShip;
+    char** powerUpsPtr = nullptr;
 
     public:
     /** Default constructor
@@ -83,6 +84,8 @@ class HumanPlayer : public PlayerInterface
 *@param  takes in the x and y coordiinate of where the player would like to attack
  the bool is for determining if it was a success or not --  "o"  */
  bool hitRetry(int x, int y);
+
+ void setPowerUpsPtr(char** &execPtr);
 
 };
 #endif
