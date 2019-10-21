@@ -31,7 +31,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Battleship: V2!
    </div>
-   <div id="projectbrief">A Battleship game written by the Codewalkers, feat. upgrades by Team Crossover!</div>
+   <div id="projectbrief">A Battleship game written by the Code-Walkers, feat. upgrades by Team Crossover!</div>
   </td>
  </tr>
  </tbody>
@@ -260,6 +260,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 1 or 2 fires at opposing player </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player fires a Area of Effect (AoE) shot with a defined range at opposing player's board </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+    <tr><td class="paramname">coordinateR</td><td>update board at row coordinate relative to center row coordinate </td></tr>
+    <tr><td class="paramname">coordinateC</td><td>update board at column coordinate relative to center col coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -316,6 +328,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Check must be between 0 and 7 </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>returns true if within bounds, false otherwise </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">check</td><td>is an int </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -334,6 +354,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Check must be between 0 and 7 </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>returns true if within bounds, false otherwise </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">check</td><td>is an int </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -400,6 +428,18 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 1 or 2 fires at opposing player </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player fires an orthogonal cross shot at opposing player's board </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+    <tr><td class="paramname">coordinateR</td><td>update board at row coordinate relative to center row coordinate </td></tr>
+    <tr><td class="paramname">coordinateC</td><td>update board at column coordinate relative to center col coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -588,6 +628,18 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 1 or 2 fires at opposing player </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player fires a vertical shot (acrooss the row) at opposing player's board </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+    <tr><td class="paramname">coordinateR</td><td>update board at row coordinate relative to center row coordinate </td></tr>
+    <tr><td class="paramname">coordinateC</td><td>update board at column coordinate relative to center col coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -744,6 +796,18 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 1 or 2 fires at opposing player </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player fires a devistating shot (fires at every coordinate) at opposing player's board </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+    <tr><td class="paramname">coordinateR</td><td>update board at row coordinate relative to center row coordinate </td></tr>
+    <tr><td class="paramname">coordinateC</td><td>update board at column coordinate relative to center col coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -784,6 +848,16 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 1's turn </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player 1 register's shot as either hit or miss. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -828,6 +902,17 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 1's turn </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player 1 fires a special shot at Player 2's board. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+    <tr><td class="paramname">shotType</td><td>uses an acceptable special shot type from <a class="el" href="class_inventory.html">Inventory</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -869,6 +954,16 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 1's turn </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player 1 fires a regular shot at Player 2's board. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -926,6 +1021,16 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 1's turn </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player 1 register's shot as either hit or miss. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -970,6 +1075,17 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 2's turn </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player 2 fires a special shot at Player 2's board. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+    <tr><td class="paramname">shotType</td><td>uses an acceptable special shot type from <a class="el" href="class_inventory.html">Inventory</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1011,6 +1127,16 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 2's turn </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player 2 fires a regular shot at Player 1's board. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1363,6 +1489,18 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Player 1 or 2 fires at opposing player </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Player fires a horizontal shot (acrooss the column) at opposing player's board </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its attack method </td></tr>
+    <tr><td class="paramname">player2</td><td><a class="el" href="class_human_player.html">HumanPlayer</a> object to access its update methods </td></tr>
+    <tr><td class="paramname">coordinateR</td><td>update board at row coordinate relative to center row coordinate </td></tr>
+    <tr><td class="paramname">coordinateC</td><td>update board at column coordinate relative to center col coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
