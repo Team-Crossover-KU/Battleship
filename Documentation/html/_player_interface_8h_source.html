@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Battleship: V2!: C:/Users/Rachel/Desktop/Fall 2019/EECS448 Software Engineering/battleship/PlayerInterface.h Source File</title>
+<title>Battleship: V2!: Fall 2019/EECS448 Software Engineering/battleship/PlayerInterface.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,32 +87,32 @@ $(document).ready(function(){initNavTree('_player_interface_8h_source.html','');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">C:/Users/Rachel/Desktop/Fall 2019/EECS448 Software Engineering/battleship/PlayerInterface.h</div>  </div>
+<div class="title">PlayerInterface.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="_player_interface_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PLAYER_INTERFACE</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PLAYER_INTERFACE</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_player_interface.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_player_interface.html">PlayerInterface</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_player_interface.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_player_interface.html">PlayerInterface</a> <span class="comment">//Interface class for both HumanPlayer and AI to implement from.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_player_interface.html#a9d94304b567816e924fbcead5ca85422">    7</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_player_interface.html#a9d94304b567816e924fbcead5ca85422">~PlayerInterface</a>() {}</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_player_interface.html#a89a7cbd47765b4fc850b93b87203ae3b">setNum</a>(<span class="keywordtype">int</span> x) = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_player_interface.html#aa160743975e73abc7e3da95c916d2738">placement</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) = 0;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_player_interface.html#acaf9b1a4040743bf0ccf3827913d227a">isAllMarked</a>() = 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_player_interface.html#a37743f2703b94be902b3a68b93932335">getHits</a>() = 0;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_player_interface.html#a64c7db3d5285f95e5f5c031ebcba3c46">attack</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_player_interface.html#a40ccfeef0fa1e926e09f2add88dd333c">update</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">bool</span>) = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_player_interface.html#aecdfd2c23faef42c479965c3f8b907b1">hitRetry</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) = 0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_player_interface.html#a89a7cbd47765b4fc850b93b87203ae3b">setNum</a>(<span class="keywordtype">int</span> x) = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_player_interface.html#aa160743975e73abc7e3da95c916d2738">placement</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) = 0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_player_interface.html#acaf9b1a4040743bf0ccf3827913d227a">isAllMarked</a>() = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_player_interface.html#a37743f2703b94be902b3a68b93932335">getHits</a>() = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_player_interface.html#a64c7db3d5285f95e5f5c031ebcba3c46">attack</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_player_interface.html#a40ccfeef0fa1e926e09f2add88dd333c">update</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">bool</span>) = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_player_interface.html#aecdfd2c23faef42c479965c3f8b907b1">hitRetry</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_player_interface_html_aecdfd2c23faef42c479965c3f8b907b1"><div class="ttname"><a href="class_player_interface.html#aecdfd2c23faef42c479965c3f8b907b1">PlayerInterface::hitRetry</a></div><div class="ttdeci">virtual bool hitRetry(int x, int y)=0</div></div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('_player_interface_8h_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="_player_interface_8h.html">PlayerInterface.h</a></li>
+    <li class="navelem"><a class="el" href="dir_d12ee9ebaf5b35e191e95c348200bb46.html">Fall 2019</a></li><li class="navelem"><a class="el" href="dir_d6e6f27c1ff69fdda3051689f4b2600a.html">EECS448 Software Engineering</a></li><li class="navelem"><a class="el" href="dir_f995fe5a8b60d51e8e0f4cfa0e46ccf3.html">battleship</a></li><li class="navelem"><a class="el" href="_player_interface_8h.html">PlayerInterface.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

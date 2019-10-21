@@ -193,6 +193,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>calls the board class to compare char and attck if match is found </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>handles the attack/comparison </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">takes</td><td>in the x and y coordiinate of where the player would like to attack </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if can attack at [row][col], false otherwise. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_human_player.html#a779da74ea6dace4ea1d38a541f0b876d">HumanPlayer</a>, and <a class="el" href="class_a_i.html#a195d27e4ce356800247d4e2a066c8fd7">AI</a>.</p>
 
@@ -220,6 +229,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>Gets the number of times a player has hit the enemies's ships </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None.</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd># of ship parts remaining </dd></dl>
 
 <p>Implemented in <a class="el" href="class_a_i.html#a1ddea3e1c4be91099253a623fd4387c9">AI</a>, and <a class="el" href="class_human_player.html#a518a6ad4d10a0d6a981cfd4bc4249484">HumanPlayer</a>.</p>
 
@@ -258,6 +276,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>retry if you've already shot at the same location twice </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>checks to see if a space has already been hit or not. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">takes</td><td>in the x and y coordiinate of where the player would like to attack </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if spot has been hit before, false otherwise </dd></dl>
 
 <p>Implemented in <a class="el" href="class_human_player.html#a9b99a0409f777b02898c1e74656b9e22">HumanPlayer</a>, and <a class="el" href="class_a_i.html#a67557576a8a47403381add481fed6e30">AI</a>.</p>
 
@@ -285,6 +312,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>None </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None.</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all ships marked, false otherwise. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_a_i.html#adf484fd284aa93696ecfa6cbd36d4eea">AI</a>, and <a class="el" href="class_human_player.html#afa24f0dbccc9ece9a9d0de41175429a9">HumanPlayer</a>.</p>
 
@@ -329,6 +365,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>take in three integers x is row, y is col, z is the direction(1~4) </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>throw a error when the direction is wrong and catch a error when placment fails </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None.</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_a_i.html#a2011f5d6bbe6112592da8f5e9033fac3">AI</a>, and <a class="el" href="class_human_player.html#af1faf72cd1f0546c5e6826fc2d2b87ce">HumanPlayer</a>.</p>
 
@@ -357,6 +402,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>takes in a integer x </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>set up # of ships and set those ships are unmark </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None.</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_a_i.html#a26262d43b331d7097fb15f58b9fa35c2">AI</a>, and <a class="el" href="class_human_player.html#a87bb739dae5963e9d0890fa1a5cf13c1">HumanPlayer</a>.</p>
 
@@ -401,13 +455,22 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>calls the board class to compare char and update the board </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>handles the attack/comparison </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">takes</td><td>in the x and y coordiinate of where the player would like to attack the bool is for determining if it was a success or not &ndash; "x" or "o" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_a_i.html#a07723c8143461c9725f999d6d7b74422">AI</a>, and <a class="el" href="class_human_player.html#a1750844393bc158e5c4d6ca3a1afa25a">HumanPlayer</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Rachel/Desktop/Fall 2019/EECS448 Software Engineering/battleship/<a class="el" href="_player_interface_8h_source.html">PlayerInterface.h</a></li>
+<li>Fall 2019/EECS448 Software Engineering/battleship/<a class="el" href="_player_interface_8h_source.html">PlayerInterface.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
