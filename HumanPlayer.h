@@ -27,23 +27,23 @@ class HumanPlayer : public PlayerInterface
  *@param None  */
     HumanPlayer();
 
-    /** Default constructor
+    /** Sets number of ships
  *@pre takes in a integer x
  *@post set up # of ships and set those ships are unmark
  *@param None  */
     void setNum(int x);
-    /**Default constructor
+    /**Places ships according to a 2D location and then a direction
  *@pre take in three integers x is row, y is col, z is the direction(1~4)
  *@post throw a error when the direction worrg and catch a error when placment fails
  *@param None  */
     void placement(int x, int y, int z);
-    /** Default constructor
+    /** Prints the map found in the board
  *@pre none
  *@post print the map in board object
  *@param None  */
     void print();
 
-/** Default constructor
+/** Checks if all ships are marked
  *@pre none
  *@post return true if all ships are marked, false otherwise
  *@param None  */
@@ -86,13 +86,46 @@ class HumanPlayer : public PlayerInterface
 *@param  takes in the x and y coordiinate of where the player would like to attack */
  bool hitRetry(int x, int y);
 
+/** gets playerBoard
+ *@pre none
+ *@post Returns playerBoard
+ *@param None  */
  Board getBoard();
 
+/** sets the WeaponInventory's inventoryFile variable
+ *@pre none
+ *@post WeaponInventory's inventoryFile variable should now hold the new value
+ *@param takes in new value for WeaponInventory's inventoryFile  */
  void setInventoryFile(string fileName);
+ 
+/** Reads in inventory from the file described by WeaponInventory's inventoryFile variable
+ *@pre setInventoryFile should be ran before this to set intended file to read
+ *@post shotArray and cheatermode should be initalized to variables from file
+ *@param none  */
  void loadInventory();
+ 
+ /** Prints out whole of WeaponInventory's shotArray and numCheat to cout
+ *@pre none
+ *@post inventory should be printed
+ *@param none  */
  void printInventory();
+ 
+ /** Prints out each shot in WeaponInventory's shotArray as long as it has at least one in amount as well as numCheat
+ *@pre none
+ *@post inventory should be printed
+ *@param none  */
  void printInventory2();
+ 
+ /** Shuffles WeaponInventory's shotArray
+ *@pre none
+ *@post WeaponInventory's ShotArray should be shuffled
+ *@param none  */
  void inventoryRoll();
+ 
+ /** Prompts user to choose a shot from WeaponInventory's shotArray then returns bool for if selection was valid
+ *@pre none
+ *@post menu should be printed
+ *@param String to store selected type  */
  bool inventorySelect(string& shotType);
 
 };
