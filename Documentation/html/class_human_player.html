@@ -268,6 +268,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>gets playerBoard </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Returns playerBoard </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td><br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -432,6 +441,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Shuffles WeaponInventory's shotArray </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>WeaponInventory's ShotArray should be shuffled </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td><br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -479,6 +497,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Prompts user to choose a shot from WeaponInventory's shotArray then returns bool for if selection was valid </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>menu should be printed </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">String</td><td>to store selected type <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -521,7 +548,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Default constructor </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
+<p>Checks if all ships are marked </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>return true if all ships are marked, false otherwise </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -549,6 +576,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Reads in inventory from the file described by WeaponInventory's inventoryFile variable </p><dl class="section pre"><dt>Precondition</dt><dd>setInventoryFile should be ran before this to set intended file to read </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>shotArray and cheatermode should be initalized to variables from file </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td><br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -606,7 +642,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Default constructor </p><dl class="section pre"><dt>Precondition</dt><dd>take in three integers x is row, y is col, z is the direction(1~4) </dd></dl>
+<p>Places ships according to a 2D location and then a direction </p><dl class="section pre"><dt>Precondition</dt><dd>take in three integers x is row, y is col, z is the direction(1~4) </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>throw a error when the direction worrg and catch a error when placment fails </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -643,7 +679,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default constructor </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
+<p>Prints the map found in the board </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>print the map in board object </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -737,6 +773,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Prints out whole of WeaponInventory's shotArray and numCheat to cout </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>inventory should be printed </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td><br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -769,6 +814,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Prints out each shot in WeaponInventory's shotArray as long as it has at least one in amount as well as numCheat </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>inventory should be printed </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td><br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -799,6 +853,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>sets the WeaponInventory's inventoryFile variable </p><dl class="section pre"><dt>Precondition</dt><dd>none </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>WeaponInventory's inventoryFile variable should now hold the new value </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">takes</td><td>in new value for WeaponInventory's inventoryFile <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -834,7 +897,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Default constructor </p><dl class="section pre"><dt>Precondition</dt><dd>takes in a integer x </dd></dl>
+<p>Sets number of ships </p><dl class="section pre"><dt>Precondition</dt><dd>takes in a integer x </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>set up # of ships and set those ships are unmark </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
